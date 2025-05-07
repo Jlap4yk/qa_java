@@ -8,3 +8,4 @@ public interface Predator {
     int getKittens();
 
 }
+
