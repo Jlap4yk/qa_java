@@ -28,9 +28,9 @@ public class LionSimpleTest {
 
     @Test
     public void getKittens_ReturnsPredatorKittens() throws Exception {
-        when(felineMock.getKittens()).thenReturn(3);
+        when(felineMock.getKittens()).thenReturn(1); // Changed from 3 to 1
         Lion lion = new Lion("Самец", felineMock);
-        assertEquals("Должен вернуть количество котят от Feline", 3, lion.getKittens());
+        assertEquals("Должен вернуть количество котят от Feline", 1, lion.getKittens());
     }
 
     @Test
